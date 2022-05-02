@@ -5,7 +5,7 @@ import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup/dist/yup';
 import { selectUsers, updateUser, UserDataState } from 'state/users/usersSlice';
 import classNames from 'classnames';
-import { useLocation, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { toast } from 'react-hot-toast';
 
 export default function UsersListPage() {

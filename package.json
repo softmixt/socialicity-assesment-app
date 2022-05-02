@@ -2,6 +2,7 @@
   "name": "socialicity-assesment-app",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://softmixt.github.io",
   "dependencies": {
     "@ag-grid-community/client-side-row-model": "^27.2.1",
     "@ag-grid-community/core": "^27.2.1",
@@ -39,7 +40,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint src/**/*.ts src/**/*.tsx"
+    "lint": "eslint src/**/*.ts src/**/*.tsx",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -68,6 +71,7 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
-    "eslint-plugin-react-hooks": "^4.5.0"
+    "eslint-plugin-react-hooks": "^4.5.0",
+    "gh-pages": "^3.2.3"
   }
 }
