@@ -6,6 +6,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## NOTE: because of timing issues and some personal things didn't had time to add tests also I use for presenting the data into a table the famous component  [ag-grid ](https://www.ag-grid.com/react-data-grid/)
 
+
+<img width="2339" alt="image" src="https://user-images.githubusercontent.com/1758477/166342806-38d29b9d-e16b-49ab-9eaa-4d2753130dc8.png">
+
+
 ## Available Scripts
 
 In the project directory, you can run:
