@@ -11,8 +11,4 @@ export default class ProgressBar {
   static done() {
     NProgress.done();
   }
-
-  static set(val) {
-    NProgress.set(val);
-  }
 }

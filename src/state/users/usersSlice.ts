@@ -36,6 +36,13 @@ export const usersSlice = createSlice({
     deleteUser: (state, action) => {
       state.data = state.data.filter((item) => (item.id !== action.payload));
     },
+    updateUser: (state, action) => {
+      const userData = action.payload;
+      const users = state.data;
+      const index = users.findIndex((u) => u.id === userData.id);
+      users[index] = userData;
+      state.data = users;
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -53,8 +60,7 @@ export const usersSlice = createSlice({
 
 export default usersSlice.reducer;
 
-export const { deleteUser } = usersSlice.actions;
+export const { deleteUser, updateUser } = usersSlice.actions;
 
 // Selectors ...
 export const selectUsers = (state: RootState) => state.users.data;
-export const isLoading = (state: RootState) => state.users.status === 'loading';
