@@ -2,7 +2,7 @@
   "name": "socialicity-assesment-app",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://softmixt.github.io/socialicity-assesment-app/",
+  "homepage": "https://softmixt.github.io/socialicity-assesment-app",
   "dependencies": {
     "@ag-grid-community/client-side-row-model": "^27.2.1",
     "@ag-grid-community/core": "^27.2.1",
