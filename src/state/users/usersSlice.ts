@@ -33,9 +33,9 @@ export const usersSlice = createSlice({
   name: 'users',
   initialState,
   reducers: {
-  /*  setPage: (state, action) => {
-      state.page = action.payload;
-    }, */
+    deleteUser: (state, action) => {
+      state.data = state.data.filter((item) => (item.id !== action.payload));
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -53,7 +53,7 @@ export const usersSlice = createSlice({
 
 export default usersSlice.reducer;
 
-// export const { setPage } = usersSlice.actions;
+export const { deleteUser } = usersSlice.actions;
 
 // Selectors ...
 export const selectUsers = (state: RootState) => state.users.data;
