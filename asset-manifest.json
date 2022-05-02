@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/socialicity-assesment-app/static/css/main.b043db68.css",
-    "main.js": "/socialicity-assesment-app/static/js/main.7a0dd4ec.js",
+    "main.js": "/socialicity-assesment-app/static/js/main.827d582b.js",
     "static/js/10.cdc66cfa.chunk.js": "/socialicity-assesment-app/static/js/10.cdc66cfa.chunk.js",
     "static/js/647.70f67995.chunk.js": "/socialicity-assesment-app/static/js/647.70f67995.chunk.js",
-    "static/js/899.04e23705.chunk.js": "/socialicity-assesment-app/static/js/899.04e23705.chunk.js",
-    "static/js/173.103a6543.chunk.js": "/socialicity-assesment-app/static/js/173.103a6543.chunk.js",
+    "static/js/899.ffbb94e4.chunk.js": "/socialicity-assesment-app/static/js/899.ffbb94e4.chunk.js",
+    "static/js/173.fb3c8743.chunk.js": "/socialicity-assesment-app/static/js/173.fb3c8743.chunk.js",
     "static/js/249.89bb10ab.chunk.js": "/socialicity-assesment-app/static/js/249.89bb10ab.chunk.js",
     "static/js/787.68150ad8.chunk.js": "/socialicity-assesment-app/static/js/787.68150ad8.chunk.js",
     "static/js/140.fd073cb1.chunk.js": "/socialicity-assesment-app/static/js/140.fd073cb1.chunk.js",
-    "static/js/901.9dfcaad3.chunk.js": "/socialicity-assesment-app/static/js/901.9dfcaad3.chunk.js",
+    "static/js/901.a6ce859a.chunk.js": "/socialicity-assesment-app/static/js/901.a6ce859a.chunk.js",
     "static/css/744.4967a52b.chunk.css": "/socialicity-assesment-app/static/css/744.4967a52b.chunk.css",
     "static/js/744.13d036bc.chunk.js": "/socialicity-assesment-app/static/js/744.13d036bc.chunk.js",
     "static/media/fa-solid-900.ttf": "/socialicity-assesment-app/static/media/fa-solid-900.e615bbcb258550973c16.ttf",
@@ -22,20 +22,20 @@
     "static/media/fa-v4compatibility.woff2": "/socialicity-assesment-app/static/media/fa-v4compatibility.afac89562a5301459069.woff2",
     "index.html": "/socialicity-assesment-app/index.html",
     "main.b043db68.css.map": "/socialicity-assesment-app/static/css/main.b043db68.css.map",
-    "main.7a0dd4ec.js.map": "/socialicity-assesment-app/static/js/main.7a0dd4ec.js.map",
+    "main.827d582b.js.map": "/socialicity-assesment-app/static/js/main.827d582b.js.map",
     "10.cdc66cfa.chunk.js.map": "/socialicity-assesment-app/static/js/10.cdc66cfa.chunk.js.map",
     "647.70f67995.chunk.js.map": "/socialicity-assesment-app/static/js/647.70f67995.chunk.js.map",
-    "899.04e23705.chunk.js.map": "/socialicity-assesment-app/static/js/899.04e23705.chunk.js.map",
-    "173.103a6543.chunk.js.map": "/socialicity-assesment-app/static/js/173.103a6543.chunk.js.map",
+    "899.ffbb94e4.chunk.js.map": "/socialicity-assesment-app/static/js/899.ffbb94e4.chunk.js.map",
+    "173.fb3c8743.chunk.js.map": "/socialicity-assesment-app/static/js/173.fb3c8743.chunk.js.map",
     "249.89bb10ab.chunk.js.map": "/socialicity-assesment-app/static/js/249.89bb10ab.chunk.js.map",
     "787.68150ad8.chunk.js.map": "/socialicity-assesment-app/static/js/787.68150ad8.chunk.js.map",
     "140.fd073cb1.chunk.js.map": "/socialicity-assesment-app/static/js/140.fd073cb1.chunk.js.map",
-    "901.9dfcaad3.chunk.js.map": "/socialicity-assesment-app/static/js/901.9dfcaad3.chunk.js.map",
+    "901.a6ce859a.chunk.js.map": "/socialicity-assesment-app/static/js/901.a6ce859a.chunk.js.map",
     "744.4967a52b.chunk.css.map": "/socialicity-assesment-app/static/css/744.4967a52b.chunk.css.map",
     "744.13d036bc.chunk.js.map": "/socialicity-assesment-app/static/js/744.13d036bc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b043db68.css",
-    "static/js/main.7a0dd4ec.js"
+    "static/js/main.827d582b.js"
   ]
 }
