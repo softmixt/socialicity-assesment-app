@@ -1,6 +1,10 @@
+# URL to project can be checked here : [https://softmixt.github.io/socialicity-assesment-app/#/customer/users](https://softmixt.github.io/socialicity-assesment-app/#/customer/users) 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) TS template.
+
+## NOTE: because of timing issues and some personal things didn't had time to add tests also I use for presenting the data into a table the famous component  [ag-grid ](https://www.ag-grid.com/react-data-grid/)
 
 ## Available Scripts
 

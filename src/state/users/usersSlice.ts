@@ -43,6 +43,13 @@ export const usersSlice = createSlice({
       users[index] = userData;
       state.data = users;
     },
+    addUser: (state, action) => {
+      const allUsersInMemory = state.data;
+      const maxUserID = Math.max(...state.data.map((o) => o.id));
+      allUsersInMemory.push({ ...action.payload, id: maxUserID + 1 });
+
+      state.data = allUsersInMemory;
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -60,7 +67,7 @@ export const usersSlice = createSlice({
 
 export default usersSlice.reducer;
 
-export const { deleteUser, updateUser } = usersSlice.actions;
+export const { deleteUser, updateUser, addUser } = usersSlice.actions;
 
 // Selectors ...
 export const selectUsers = (state: RootState) => state.users.data;
