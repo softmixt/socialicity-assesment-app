@@ -7,13 +7,10 @@ import 'ag-grid-community/dist/styles/ag-theme-alpine.css';
 
 import { AgGridReact } from 'ag-grid-react';
 
-import { useAppDispatch, useAppSelector } from 'app/hooks';
+import { useAppSelector } from 'app/hooks';
 import {
-  fetchUsersDataAsync,
-  isLoading,
   selectUsers,
 } from 'state/users/usersSlice';
-import { toast } from 'react-hot-toast';
 import { NavLink } from 'react-router-dom';
 
 function ActionsCellRenderer({ data }: any) {
@@ -39,7 +36,6 @@ function ActionsCellRenderer({ data }: any) {
 }
 
 export default function ListUsers() {
-  const dispatch = useAppDispatch();
   const gridRef = useRef<any>();
 
   // States ...
@@ -65,7 +61,6 @@ export default function ListUsers() {
     {
       headerName: 'Actions',
       field: 'actions',
-      type: ['nonEditableColumn'],
       sortable: false,
       filter: false,
       cellRenderer: ActionsCellRenderer,
@@ -88,12 +83,6 @@ export default function ListUsers() {
     floatingFilter: true,
   }), []);
 
-  const onGridReady = useCallback((params) => {
-    if (!users.length) {
-      dispatch(fetchUsersDataAsync()).catch(() => toast.error(''));
-    }
-  }, []);
-
   const onFirstDataRendered = useCallback((params) => {
     gridRef.current.api.sizeColumnsToFit();
   }, []);
@@ -103,10 +92,7 @@ export default function ListUsers() {
   }, [users]);
 
   return (
-    <div
-      className="container-fluid ag-theme-alpine pb-3"
-      style={containerStyle}
-    >
+    <div className="container-fluid ag-theme-alpine pb-3" style={containerStyle}>
       <AgGridReact
         ref={gridRef}
         rowData={rowData}
@@ -118,7 +104,6 @@ export default function ListUsers() {
         pagination
         paginationPageSize={5}
         paginationAutoPageSize
-        onGridReady={onGridReady}
         onFirstDataRendered={onFirstDataRendered}
       />
     </div>
