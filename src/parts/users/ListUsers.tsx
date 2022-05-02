@@ -14,6 +14,29 @@ import {
   selectUsers,
 } from 'state/users/usersSlice';
 import { toast } from 'react-hot-toast';
+import { NavLink } from 'react-router-dom';
+
+function ActionsCellRenderer({ data }: any) {
+  return (
+    <div className="d-flex justify-content-start align-items-center h-100">
+      <NavLink to={`/customer/users/edit/${data.id}`} className="btn btn-sm btn-primary mx-2">
+        <i className="fa-solid fa-user-pen" />
+        {' '}
+      </NavLink>
+
+      <NavLink to={`/customer/users/view/${data.id}`} className="btn btn-sm btn-warning mx-2">
+        <i className="fa-solid fa-eye" />
+        {' '}
+      </NavLink>
+
+      <button type="button" className="btn btn-sm btn-danger mx-2">
+        <i className="fa-solid fa-trash-can" />
+        {' '}
+      </button>
+
+    </div>
+  );
+}
 
 export default function ListUsers() {
   const dispatch = useAppDispatch();
@@ -28,10 +51,6 @@ export default function ListUsers() {
       filter: 'agTextColumnFilter',
     },
     {
-      field: 'email',
-      filter: 'agTextColumnFilter',
-    },
-    {
       field: 'first_name',
       filter: 'agTextColumnFilter',
     },
@@ -40,10 +59,18 @@ export default function ListUsers() {
       filter: 'agTextColumnFilter',
     },
     {
-      field: 'avatar',
-      filter: false,
-      sortable: false,
+      field: 'email',
+      filter: 'agTextColumnFilter',
     },
+    {
+      headerName: 'Actions',
+      field: 'actions',
+      type: ['nonEditableColumn'],
+      sortable: false,
+      filter: false,
+      cellRenderer: ActionsCellRenderer,
+    },
+
   ]);
 
   // Selectors ...

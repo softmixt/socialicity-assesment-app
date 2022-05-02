@@ -1,24 +1,21 @@
 import React from 'react';
 
 import ListUsers from 'parts/users/ListUsers';
+import { NavLink } from 'react-router-dom';
 
 export default function UsersListPage(props: any) {
   return (
     <div className="row">
 
-      <section className="py-5 text-center container">
-        <div className="row py-lg-5">
-          <div className="col-lg-6 col-md-8 mx-auto">
-            <h1 className="fw-light">Album example</h1>
-            <p className="lead text-muted">
-              Something short and leading about the collection below—its contents,
-              the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it
-              entirely.
-            </p>
-          </div>
-        </div>
-      </section>
+      <div className="w-100 d-flex flex-column flex-md-row justify-content-end">
 
+        <NavLink to="/customer/users/new" className="btn btn-sm btn-outline-secondary mb-3">
+          <i className="fa-solid fa-user-plus" />
+          {' '}
+          New User
+        </NavLink>
+
+      </div>
       <ListUsers />
     </div>
   );
