@@ -1,6 +1,6 @@
 import React, { Suspense } from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
   Navigate,
@@ -17,7 +17,7 @@ const UsersViewIndexPage = React.lazy(() => import('./pages/customer/users/Users
 
 function AppRouter() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
 
         {/* Supposed public routes .... */}
@@ -40,7 +40,7 @@ function AppRouter() {
         <Route path="*" element={<NotFoundPage />} />
 
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
