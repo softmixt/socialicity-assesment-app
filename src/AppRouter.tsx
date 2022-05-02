@@ -17,7 +17,7 @@ const UsersViewIndexPage = React.lazy(() => import('./pages/customer/users/Users
 
 function AppRouter() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/socialicity-assesment-app/">
       <Routes>
 
         {/* Supposed public routes .... */}
